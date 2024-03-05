@@ -136,14 +136,12 @@ img{
     pointer-events: none;
 }
 
-@media screen and (max-width: 800px) {
-    body {
-        height: 100vh;
-    }
+@media screen and (max-width: 850px) {
+
         .informiton {
             display: flex;
             justify-content: space-between;
-            margin: 20px auto 20px;
+            margin: 5px auto 5px;
             width: 440px;
             font-weight: bold;
             font-size: larger;
@@ -156,9 +154,8 @@ img{
         }
         .game-block {
             display: flex;
-            width: 600px;
+            width: 580px;
             flex-wrap: wrap;
-            margin: -12px auto;
         }
         .front {
             background-color: #333;
@@ -166,21 +163,32 @@ img{
         }
         .memory-gameBlock {
             display: flex;
-            height: 125px;
             transition: transform .5s;
             transform-style: preserve-3d;
             cursor: pointer;
             position: relative;
-            flex: 1 0 80px;
-            margin: 10px;
+            flex: 1 0 76px;
+            margin-top: 5px;
         }
         .front::before {
             content: '? ';
             color: white;
             font-size: 54px;
             position: absolute;
-            top: -27%;
+            top: -10%;
             left: 30px;}
+            .restart {
+                align-items: center;
+                left: 95%;
+                font-size: 15px;
+                padding: 10px;
+            }
+            .restart:hover{
+                align-items: center;
+                left: 95%;
+                font-size: 15px;
+                padding: 10px;
+            }
 }
 .ower{
     position: absolute;

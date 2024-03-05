@@ -178,17 +178,9 @@ img{
             top: -10%;
             left: 30px;}
             .restart {
-                align-items: center;
-                left: 95%;
-                font-size: 15px;
-                padding: 10px;
+                display: none;
             }
-            .restart:hover{
-                align-items: center;
-                left: 95%;
-                font-size: 15px;
-                padding: 10px;
-            }
+     
 }
 .ower{
     position: absolute;

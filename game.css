@@ -1,0 +1,194 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url(/img/wallpaperflare.com_wallpaper\ \(6\).jpg) center no-repeat ;
+    background-size: cover;
+    
+}
+.buttom-controlar{
+    background-color: #b9b1eb9f;
+    position: fixed;
+    color: #ffffff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.restart{
+    background-color: #046dc2;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000000;
+    border: 2px solid white;
+    padding: 6px;
+    position: absolute;
+    top: 2%;
+    left: 85%;
+}
+.restart:hover{
+    background-color: #17028d;
+    color: #fafafa;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 6px;
+    position: absolute;
+    top: 2%;
+    left: 85%;
+}
+.buttom-controlar .StartGame{
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    background-color: #2196F3;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transform: translate(-50px,-50px);
+    cursor: pointer;
+}
+.buttom-controlar .StartGame:hover{
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    background-color: #17028d;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transform: translate(-50px,-50px);
+    cursor: pointer;
+}
+.informiton{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 20px ;
+    width: 480px;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px #2196F3 ;
+    color: #000000;
+    background-color: #ffffff80 ;
+    border: 2px solid #000000;
+}
+.game-block{
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 20px auto;
+
+}
+.game-block.no-clicking{
+    pointer-events: none;
+}
+.memory-gameBlock{
+    display: flex;
+    height: 194px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 140px;
+    margin: 0 10px 20px;
+    
+}
+.front{
+    background-color: #333;
+    line-height: 200px;
+    
+}
+.front::before{
+    content: '? ';
+    color: white;
+    font-size: 100px;
+
+}
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border: 5px solid #2196F3;
+}
+.back{
+    background-color: #607D8B;
+    transform: rotateY(180deg);
+    margin-left: -10px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    background: cover;
+
+}
+.is-flipd,.has-Matched{
+    transform: rotateY(175deg);
+    pointer-events: none;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        height: 100vh;
+    }
+        .informiton {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto 20px;
+            width: 440px;
+            font-weight: bold;
+            font-size: larger;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 0 2px #2196F3;
+            color: #000000;
+            background-color: #ffffff80;
+            border: 2px solid #000000
+        }
+        .game-block {
+            display: flex;
+            width: 600px;
+            flex-wrap: wrap;
+            margin: -12px auto;
+        }
+        .front {
+            background-color: #333;
+            /* line-height: 200px; */
+        }
+        .memory-gameBlock {
+            display: flex;
+            height: 125px;
+            transition: transform .5s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            position: relative;
+            flex: 1 0 80px;
+            margin: 10px;
+        }
+        .front::before {
+            content: '? ';
+            color: white;
+            font-size: 54px;
+            position: absolute;
+            top: -27%;
+            left: 30px;}
+}
+.ower{
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    left: 0;
+    color: #607d8b7e;
+}
+
+
+
